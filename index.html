@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Trekkie's rule</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header class="container-flid st-bg-blk text-light px-5 sticky-top ">
+    <!-- SECTION NavBar -->
+    <section class="row gap-1 align-items-center">
+      <div class="col-1">
+        <img class=" img-fluid"
+          src="https://cdn.shopify.com/s/files/1/0018/7337/9427/files/startrek-icon-white_copy.png?v=1634222494" alt="">
+      </div>
+      <div class="col">
+        <h1 class="cinzel"> Star Trek is Awesome!</h1>
+      </div>
+    </section>
+  </header>
+  <main class="container-fluid ">
+
+    <!-- SECTION Form area -->
+    <section class="row bg-img justify-content-center p-5 img-fluid gap-5 m-0">
+      <div class="col-4">
+        <h6 class="text-light text-muted">Captains Review</h6>
+        <section class="row">
+          <div class="col bg-light p-3">
+            <h6> Crewman's log</h6>
+            <form>
+              <section class="row justify-content-center">
+                <div class="col-12 mb-3">
+                  <input class="foum-control w-100" placeholder="Name" type="text">
+                </div>
+                <div class="col-12 mb-3">
+                  <input class="foum-control w-100" placeholder="Email" type="text">
+                </div>
+                <div class="col-6 mb-3">
+                  <input class="foum-control w-100" placeholder="Rank" type="text">
+                </div>
+                <div class="col-6 mb-3">
+                  <input class="foum-control w-100" placeholder="Section" type="text">
+                </div>
+                <div class="col-12 mb-3 msg-ht">
+                  <input class="foum-control w-100 h-100" placeholder="Message" type="text">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                    <label class="form-check-label" for="gridCheck1">
+                      Reviewed
+                    </label>
+                  </div>
+                  <div class="col-2">
+                    <button class="btn btn-light cmd-tx-color"> SUBMIT</button>
+                  </div>
+                </div>
+              </section>
+            </form>
+          </div>
+        </section>
+      </div>
+      <div id="TB-Form" class="col p-5 border-start border-5 border-danger h-50 text-light ">
+        <p>
+        <h2>Captain James T. Kirk</h2> “Without freedom of choice there is no creativity.”
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION Box overflow-->
+    <section class="row justify-content-center st-bg-blk">
+      <div class="col-6 text-light p-5 order-2 order-sm-1">
+        <h1>Ships Status Report.</h1>
+        <div class="btn-group">
+          <button type="button" class="btn cmd-bg-color">Departments</button>
+          <button type="button" class="btn dropdown-toggle dropdown-toggle-split cmd-bg-color" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <span class="visually-hidden">Toggle Dropdown</span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Engineering</a></li>
+            <li><a class="dropdown-item" href="#">Science</a></li>
+            <li><a class="dropdown-item" href="#">Tactical</a></li>
+            <li><a class="dropdown-item" href="#">Medical</a></li>
+            <li><a class="dropdown-item" href="#">Command</a></li>
+          </ul>
+        </div>
+        <h4 class="tac-tx-color">
+          Tactical
+        </h4>
+        <P>
+        <ul>
+          <li>
+            Alert Status: Normal.
+          </li>
+          <li>
+            Long Range Scans: Nothing outside of standard operating parameters.
+          </li>
+          <li>
+            Torpedo Warheads: 100
+          </li>
+          <li>
+            Phasers: 90%
+          </li>
+          <li>
+            Shields: 100%
+          </li>
+        </ul>
+        </P>
+      </div>
+      <div id="progressbox"
+        class="col-6 d-flex justify-content-center align-items-center move-down p-5 order-1 order-sm-2">
+        <section class="row bg-light gy-3 p-1 shadow flex-fill">
+          <div class="col-1">
+            <i class="mdi mdi-engine eng-tx-color"></i>
+          </div>
+          <div class="col-11">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped eng-bg-color" role="progressbar" aria-label="Engineering"
+                style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-1">
+            <i class="mdi mdi-flask-empty sci-tx-color"></i>
+          </div>
+          <div class="col-11">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped sci-bg-color" role="progressbar" aria-label="Science"
+                style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-1">
+            <i class="mdi mdi-decagram tac-tx-color"></i>
+          </div>
+          <div class="col-11">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped tac-bg-color" role="progressbar" aria-label="Tactical"
+                style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-1">
+            <i class="mdi mdi-hospital-box med-tx-color"></i>
+          </div>
+          <div class="col-11">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped med-bg-color" role="progressbar" aria-label="Medical"
+                style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-1">
+            <i class="mdi mdi-shield cmd-tx-color"></i>
+          </div>
+          <div class="col-11">
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped cmd-bg-color" role="progressbar" aria-label="Command"
+                style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- SECTION Image Row -->
+    <section class="row p-2 align-items-center cmd-bg-color">
+      <div class="col-3 img-fluid ">
+        <img class="img-fluid img-border"
+          src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d68ee209-efc0-4033-9425-6cc1a83c74b5/dcc1fxe-0964aca4-e6ab-4d45-80aa-aac5e1f64e8f.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q2OGVlMjA5LWVmYzAtNDAzMy05NDI1LTZjYzFhODNjNzRiNVwvZGNjMWZ4ZS0wOTY0YWNhNC1lNmFiLTRkNDUtODBhYS1hYWM1ZTFmNjRlOGYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.nRBRQN9nH6mpkl9IVNDyogwM2BQrzkQsCTmKxOxBH4o"
+          alt="">
+      </div>
+      <div class="col-9 p-5 st-tx-blk">
+        <h1><i class="mdi mdi-shield fs-1"></i> The Captains of Star Trek</h1>
+        <h1> Famous quotes</h1>
+        <p>
+        <ul>
+          <li>
+            Captain Kirk: "To Boldly Go Where No Man Has Gone Before"
+          </li>
+          <li>
+            Captain Picard: "Let's Make Sure History Never Forgets The Name Enterprise."
+          </li>
+          <li>
+            Captain Sisko: "It is the unknown that defines our existence. We are constantly searching not just for
+            answers, but for new questions. We are explorers."
+          </li>
+          <li>
+            Captain Janeway: "You know as well as I do that fear only exists for one purpose... to be conquered."
+          </li>
+          <li>
+            Captain Archer: "Starfleet could have sent a probe out here, to make maps and take pictures, but they
+            didn’t. They sent us, so that we could explore with our own senses."
+          </li>
+        </ul>
+        </p>
+        <div class="d-flex justify-content-end px-5">
+          <button class="btn st-bg-blk text-light" type="button">More</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!--SECTION 3 Boxes  -->
+    <section class="row p-5 justify-content-center gap-5 st-bg-blk">
+      <div class="col-3 bg-light text-center m-3 order-2 order-sm-1">
+        <div class="row yellow">
+          <p>
+            <i class="mdi mdi-alarm-light eng-tx-color"></i>
+            <i class="mdi mdi-alarm-light eng-tx-color"></i>
+            <i class="mdi mdi-alarm-light eng-tx-color"></i>
+          </p>
+          <p class="eng-tx-color">YELLOW ALERT</p>
+          <p>When someone is living in ignorant bliss not knowing how awesome Star Trek is. </p>
+        </div>
+      </div>
+      <div class="col-3 bg-light text-center order-1 order-sm-2">
+        <div class="row red h-100">
+          <p>
+            <i class="mdi mdi-alarm-light cmd-tx-color"></i>
+            <i class="mdi mdi-alarm-light cmd-tx-color"></i>
+            <i class="mdi mdi-alarm-light cmd-tx-color"></i>
+          </p>
+          <p class="cmd-tx-color">RED ALERT</p>
+          <p>When someone has seen both Star Trek and Star Wars and claims that Star Wars is better. </p>
+        </div>
+      </div>
+      <div class="col-3 bg-light text-center m-3 order-3 order-sm-3">
+        <div class="row teal">
+          <p>
+            <i class="mdi mdi-alarm-light med-tx-color"></i>
+            <i class="mdi mdi-alarm-light med-tx-color"></i>
+            <i class="mdi mdi-alarm-light med-tx-color"></i>
+          </p>
+          <p>CONDITION GREEN</p>
+          <p>When you are hanging out with other Trekkies watching an episode on a friday night.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <!-- SECTION Footer -->
+    <section class="row justify-content-start p-5 sci-bg-color">
+      <div class="col- text-light">
+        <h1>Join StarFleet Today!</h1>
+        <p>Ad Astra Per Aspera(to the stars through hardships)</p>
+      </div>
+    </section>
+    <section class="row text-center">
+      <p>Everyone knows Star Trek is better than Star Wars. (**cough cough**... you know who I am talking too. <i
+          class="mdi mdi-emoticon-wink"></i>)</p>
+    </section>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

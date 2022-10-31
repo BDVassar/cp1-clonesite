@@ -1,0 +1,124 @@
+.bg-img {
+  background-image: url(https://wallpaperaccess.com/full/973572.jpg);
+  background-position: center;
+  background-size: cover;
+
+
+}
+
+.move-down {
+  transform: translateY(16vh);
+}
+
+.msg-ht {
+  min-height: 20vh;
+}
+
+.img-border {
+  border: 5px solid #000000;
+}
+
+.red {
+  background-color: white;
+}
+
+.red:hover {
+  box-shadow: 0px 0px 100px #a71313;
+
+}
+
+.yellow {
+  background-color: white;
+}
+
+.yellow:hover {
+  box-shadow: 0px 0px 100px #d6a444;
+
+}
+
+.teal {
+  background-color: white;
+}
+
+.teal:hover {
+  box-shadow: 0px 0px 100px teal;
+
+}
+
+.cinzel {
+  font-family: 'Permanent Marker', cursive;
+}
+
+@media only screen and (max-width: 576px) {
+  #TB-Form {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #progressbox {
+    transform: translateY(0vh);
+  }
+}
+
+@media (max-width: 768px) {
+  #progressbox {
+    transform: translateY(0vh);
+  }
+}
+
+
+
+.cmd-bg-color {
+  background-color: #a71313;
+}
+
+.eng-bg-color {
+  background-color: #d6a444;
+}
+
+.tac-bg-color {
+  background-color: #d6a444;
+}
+
+.sci-bg-color {
+  background-color: #2b53a7;
+}
+
+.st-bg-blk {
+  background-color: #000000;
+}
+
+.med-bg-color {
+  background-color: #008080;
+}
+
+.cmd-tx-color {
+  color: #a71313;
+}
+
+.eng-tx-color {
+  color: #d6a444;
+}
+
+.tac-tx-color {
+  color: #d6a444;
+}
+
+.sci-tx-color {
+  color: #2b53a7;
+}
+
+.st-tx-blk {
+  color: #000000;
+}
+
+.med-tx-color {
+  color: #008080;
+}
